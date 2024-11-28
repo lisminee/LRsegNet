@@ -1,2 +1,2 @@
 # LRsegNet
-coming soon
+Our code is coming soon
