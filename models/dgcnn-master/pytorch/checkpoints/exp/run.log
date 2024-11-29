@@ -1,0 +1,33 @@
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=32, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=32, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=32, test_batch_size=16, epochs=250, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=32, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using CPU
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=32, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=8, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='dgcnn-master/pytorch/pretrained/model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=16, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Namespace(exp_name='exp', model='dgcnn', dataset='modelnet40', batch_size=16, test_batch_size=8, epochs=50, use_sgd=True, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=True, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='D:\\Code\\dgcnn-master\\dgcnn-master\\pytorch\\pretrained\\model.1024.t7')
+Using GPU : 0 from 1 devices
+Test :: test acc: 0.929903, test avg acc: 0.901494
