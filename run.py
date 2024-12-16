@@ -67,16 +67,24 @@ def train_model(params):
         }
 
 
+        
+        dataset = torch.load('dataset.pt')
+        total_samples = len(dataset)
+        config["arange"] = total_samples 
+
+        
         all_acc, all_iou, l_iou, u_iou, count = 0, 0, 0, 0, 0
         for i in range(config["arange"]):
-
+            
             if i in [107, 224, 131, 363]:
                 continue
 
+            points, flabels, features = dataset[i]
 
-            file = f"data/ALL_data_{i}.txt"
-            flabel = f"data/ALL_label_{i}.txt"
-            ffeature = f"data/ALL_featues_{i}.txt"
+            
+            points = points.numpy()
+            flabels = flabels.numpy()
+            features = features.numpy()
 
             points = np.loadtxt(file)
             flabels = np.loadtxt(flabel)
