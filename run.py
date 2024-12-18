@@ -166,21 +166,54 @@ def setup_model(input_size, output_size, device, config):
     optimizer = optim.Adam(model.parameters(), lr=config["learning_rate"])
     return model, criterion, optimizer
 
-def train_epochs(model, loader, criterion, optimizer, num_epochs, device):
+
+def train_epochs(model, loader, criterion, optimizer, num_epochs, device, config):
     """Train the model for a number of epochs"""
+    model.train()
     for epoch in range(num_epochs):
         total_loss = 0
-        for inputs, targets in loader:
+        all_predicted = []
+        all_targets = []
+        for batch_idx, (inputs, targets) in enumerate(loader):
+
             inputs, targets = inputs.to(device), targets.to(device)
-            targets_one_hot = torch.zeros(targets.size(0), outputs.size(1)).to(device)
+
+
+            output_size = model.fc5.out_features 
+            targets_one_hot = torch.zeros(targets.size(0), output_size).to(device)
+            if targets.max() >= output_size or targets.min() < 0:
+                logging.error(f"The target label exceeds the range.Maximum value: {targets.max ()}, minimum value: {targets.min ()}, output size: {output_size}, sample index: {batch_idx}")
+                continue 
+
             targets_one_hot.scatter_(1, targets.unsqueeze(1), 1)
+
             outputs = model(inputs)
-            loss = criterion(outputs, targets_one_hot)
+
+
+            mse_loss = criterion(outputs, targets_one_hot)
+
+      
+            dist_loss = distribution_loss(inputs, outputs)
+
+    
+            loss = config["mse_weight"] * mse_loss + config["dist_weight"] * dist_loss
             total_loss += loss.item()
+
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+
+ 
+            _, predicted = torch.max(outputs, 1)
+            all_predicted.extend(predicted.cpu().numpy())
+            all_targets.extend(targets.cpu().numpy())
+
+
+        avg_loss = total_loss / len(loader)
+        logging.info(f"Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}")
+
     return model, total_loss
+
 
 def evaluate_model(model, features, flabels, device):
     """Evaluate model's accuracy"""
